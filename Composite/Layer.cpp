@@ -1,22 +1,31 @@
-
 #include "Layer.h"
 
 
+Layer::Layer() {
+
+}
+
 void Layer::SetNama(string nama)
 {
+	this->nama = nama;
 }
 
 
-void Layer::GetNama()
+string Layer::GetNama()
 {
+	return this->nama;
 }
 
-void Layer::SetComponent()
+void Layer::SetComponent(Component *component)
 {
-
+	this->component=component;
 }
 
-void Layer::GetComponent()
+Component* Layer::GetComponent()
 {
+	return (this->component);
+}
 
+Layer::~Layer(){
+	delete this->component;
 }

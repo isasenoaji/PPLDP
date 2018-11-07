@@ -1,16 +1,23 @@
 #pragma once
 #include "Component.h"
+#include "String"
+
+using namespace std;
+
+class Component;
 
 class Layer
 {
 public:
+	Layer();
+	~Layer();
 	void SetNama(string nama);
-	void GetNama();
-	void SetComponent();
-	void GetComponent();
+	string GetNama();
+	void SetComponent(Component *component);
+	Component* GetComponent();
 
 private:
-	string Nama;
-	Component *component;
+	string nama;
+	Component* component;
 };
 

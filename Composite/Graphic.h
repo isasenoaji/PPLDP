@@ -1,15 +1,24 @@
 #pragma once
 #include "Component.h"
+#include "iostream"
+#include "String"
+#include "vector"
 
-class Graphic
+using namespace std;
+
+class Graphic : public Component
 {
 public:
-	void AddComponent();
-	void GetComponent();
-	void RemoveComponent();
-	
+	Graphic();
+	~Graphic();
+	void addComponent(Component* component);
+	Component* getComponent(int idx);
+	void setNama(string nama);
+	void getNama();
+
 private:
-	Component *component;
-	string fungsi;
+	vector <Component*> component;
+	string nama;
+
 };
 

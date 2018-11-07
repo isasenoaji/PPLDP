@@ -1,21 +1,25 @@
-
 #include "Segitiga.h"
+#include "iostream"
 
-void Segitiga::SetKoordinat(int x, int y)
+using namespace std;
+
+void Segitiga::setKoordinat(int x, int y)
 {
+	this->koordinat=make_pair(x,y);
 }
 
 
-void Segitiga::GetKoordinat()
+pair<int,int> Segitiga::getKoordinat()
 {
+	return this->koordinat;
 }
 
-void  Segitia::SetWarna()
+void Segitiga::setNama(string nama)
 {
-
+	this->nama=nama;
 }
 
-string Segitiga::GetWarna()
+void Segitiga::getNama()
 {
-
+	cout << this->nama << endl;
 }

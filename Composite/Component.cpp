@@ -1,16 +1,10 @@
-#include "stdafx.h"
 #include "Component.h"
 
+Component::Component() {
 
-void Component::AddComponent()
-{
 }
 
 
-void Component::GetComponent()
-{
-}
+Component::~Component(){
 
-void Component::RemoveComponent()
-{
 }

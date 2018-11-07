@@ -1,13 +1,18 @@
 #pragma once
-class Segitiga
+#include "Component.h"
+#include "utility"
+#include "String"
+using namespace std;
+
+class Segitiga:public Component
 {
 public:
-	void SetKoordinat(int x, int y);
-	void GetKoordinat();
-	void SetWarna(string nama);
-	string GetWarna();
+	void setKoordinat(int x, int y);
+	pair<int,int> getKoordinat();
+	void setNama(string nama);
+	void getNama();
 private:
-	int Koordinat[10][10];
-	string Warna;
+	pair<int,int> koordinat;
+	string nama;
 };
 

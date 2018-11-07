@@ -1,13 +1,14 @@
 #pragma once
+#include "String"
+
+using namespace std;
+
 class Component
 {
 public:
-	void AddComponent();
-	void GetComponent();
-	void RemoveComponent();
-
-private:
-	component * Component;
-	string fungsi;
+	Component();
+	~Component();
+	virtual void getNama()=0;
+	virtual void setNama(string nama) = 0;
 };
 

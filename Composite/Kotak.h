@@ -1,14 +1,20 @@
 #pragma once
+#include "String"
+#include "Component.h"
+using namespace std;
 
-class Kotak
+class Kotak:public Component
 {
 public:
-	void SetNama(string Nama);
-	void GetNama();
+	Kotak();
+	void setNama(string nama);
+	void getNama();
+	void setDesc(string desc);
+	string getDesc();
 	~Kotak();
 
 private:
-	string Nama;
-	string DeskripsiFungsi;
+	string nama;
+	string deskripsi;
 };
 
