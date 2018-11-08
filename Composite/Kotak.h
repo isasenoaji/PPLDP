@@ -8,7 +8,7 @@ class Kotak:public Component
 public:
 	Kotak();
 	void setNama(string nama);
-	void getNama();
+	void printNama();
 	void setDesc(string desc);
 	string getDesc();
 	~Kotak();

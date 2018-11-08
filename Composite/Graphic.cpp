@@ -34,7 +34,7 @@ void Graphic::setNama(string nama)
 	this->nama = nama;
 }
 
-void Graphic::getNama()
+void Graphic::printNama()
 {
 	cout << this->nama << endl;
 	for (int i = 0; i < this->component.size(); ++i) {

@@ -9,7 +9,7 @@ class Segitiga:public Component
 public:
 	void setKoordinat(int x, int y);
 	pair<int,int> getKoordinat();
-	void setNama(string nama);
+	void printNama(string nama);
 	void getNama();
 private:
 	pair<int,int> koordinat;

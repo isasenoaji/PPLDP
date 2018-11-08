@@ -14,7 +14,7 @@ public:
 	void addComponent(Component* component);
 	Component* getComponent(int idx);
 	void setNama(string nama);
-	void getNama();
+	void printNama();
 
 private:
 	vector <Component*> component;

@@ -8,7 +8,7 @@ class Component
 public:
 	Component();
 	~Component();
-	virtual void getNama()=0;
+	virtual void printNama()=0;
 	virtual void setNama(string nama) = 0;
 };
 

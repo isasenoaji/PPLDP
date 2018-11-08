@@ -20,7 +20,7 @@ void Layer::setValue(int value)
 	this->value = value;
 }
 
-void Layer::getCurrentState()
+void Layer::whatIsCurrentState()
 {
 	if (this->state == nullptr) {
 		cout << "Currently doesn't have any state yet!" << endl;

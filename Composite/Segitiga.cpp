@@ -19,7 +19,7 @@ void Segitiga::setNama(string nama)
 	this->nama=nama;
 }
 
-void Segitiga::getNama()
+void Segitiga::printNama()
 {
 	cout << this->nama << endl;
 }

@@ -13,21 +13,21 @@ int main() {
 
 	mylayer->setValue(10);
 	cout << mylayer->getValue() << endl;
-	mylayer->getCurrentState();
+	mylayer->whatIsCurrentState();
 	mylayer->doSomething();
 	cout<<mylayer->getValue()<<endl;
 	cout << endl;
 
 	mylayer->setLayerState(nega);
 	cout << mylayer->getValue() << endl;
-	mylayer->getCurrentState();
+	mylayer->whatIsCurrentState();
 	mylayer->doSomething();
 	cout << mylayer->getValue() << endl;
 	cout << endl;
 
 	mylayer->setLayerState(plus);
 	cout << mylayer->getValue() << endl;
-	mylayer->getCurrentState();
+	mylayer->whatIsCurrentState();
 	mylayer->doSomething();
 	cout << mylayer->getValue() << endl;
 

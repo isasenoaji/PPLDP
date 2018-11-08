@@ -13,7 +13,7 @@ public:
 	~Layer();
 	int getValue();
 	void setValue(int value);
-	void getCurrentState();
+	void whatIsCurrentState();
 	void setLayerState(State* state);
 	void doSomething();
 private:

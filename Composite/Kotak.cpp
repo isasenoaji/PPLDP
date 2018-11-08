@@ -11,7 +11,7 @@ void Kotak::setNama(string nama){
 	this->nama=nama;
 }
 
-void Kotak::getNama(){
+void Kotak::printNama(){
 	cout <<this->getDesc() <<endl<<this->nama << endl;
 }
 
