@@ -1,16 +1,23 @@
 #pragma once
-#include "stdio.h"
-#include "Nama.h"
+#include "State.h"
+#include "iostream"
 
-Nama nama;
+using namespace std;
+
+class State;
 
 class Layer
 {
 public:
-	int PrintValue();
-
+	Layer();
+	~Layer();
+	int getValue();
+	void setValue(int value);
+	void getCurrentState();
+	void setLayerState(State* state);
+	void doSomething();
 private:
-	int state;
+	State* state;
 	int value;
 };
 

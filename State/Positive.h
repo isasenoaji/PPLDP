@@ -1,10 +1,14 @@
 #pragma once
-#include "stdio.h"
-
-class Positive
+#include "State.h"
+#include "Layer.h"
+class Positive :
+	public State
 {
 public:
-	int Reduce(int z);
-	
+	Positive();
+	~Positive();
+	void setState(Layer* layer);
+	void doSomething(Layer* layer);
+	void what();
 };
 
