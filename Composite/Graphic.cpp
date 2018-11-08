@@ -38,6 +38,6 @@ void Graphic::printNama()
 {
 	cout << this->nama << endl;
 	for (int i = 0; i < this->component.size(); ++i) {
-		this->component[i]->getNama();
+		this->component[i]->printNama();
 	}
 }
